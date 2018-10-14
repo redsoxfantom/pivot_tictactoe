@@ -1,0 +1,46 @@
+<tictactoe:Game xmlns:bxml="http://pivot.apache.org/bxml"
+                xmlns:tictactoe="com.company.window"
+                xmlns="org.apache.pivot.wtk">
+    <columns>
+        <TablePane.Column width="1*"/>
+        <TablePane.Column width="3*"/>
+        <TablePane.Column width="1*"/>
+    </columns>
+
+    <TablePane.Row height="1*">
+        <TablePane.Filler/>
+        <Label bxml:id="playerlabel" text="Player #'s turn" styles="{font:'Arial 24', verticalAlignment:'center', horizontalAlignment:'center'}"/>
+        <TablePane.Filler/>
+    </TablePane.Row>
+    <TablePane.Row height="3*">
+        <TablePane.Filler/>
+        <TablePane styles="{verticalSpacing:1, showHorizontalGridLines:true, horizontalSpacing:1, showVerticalGridLines:true}">
+            <columns>
+                <TablePane.Column width="1*"/>
+                <TablePane.Column width="1*"/>
+                <TablePane.Column width="1*"/>
+            </columns>
+            <TablePane.Row height="1*">
+                <PushButton bxml:id="button1x1" buttonData="0,0" styles="{font:'Arial bold 40'}"/>
+                <PushButton bxml:id="button2x1" buttonData="1,0" styles="{font:'Arial bold 40'}"/>
+                <PushButton bxml:id="button3x1" buttonData="2,0" styles="{font:'Arial bold 40'}"/>
+            </TablePane.Row>
+            <TablePane.Row height="1*">
+                <PushButton bxml:id="button1x2" buttonData="0,1" styles="{font:'Arial bold 40'}"/>
+                <PushButton bxml:id="button2x2" buttonData="1,1" styles="{font:'Arial bold 40'}"/>
+                <PushButton bxml:id="button3x2" buttonData="2,1" styles="{font:'Arial bold 40'}"/>
+            </TablePane.Row>
+            <TablePane.Row height="1*">
+                <PushButton bxml:id="button1x3" buttonData="0,2" styles="{font:'Arial bold 40'}"/>
+                <PushButton bxml:id="button2x3" buttonData="1,2" styles="{font:'Arial bold 40'}"/>
+                <PushButton bxml:id="button3x3" buttonData="2,2" styles="{font:'Arial bold 40'}"/>
+            </TablePane.Row>
+        </TablePane>
+        <TablePane.Filler/>
+    </TablePane.Row>
+    <TablePane.Row height="1*">
+        <TablePane.Filler/>
+        <PushButton bxml:id="resetgamebutton" buttonData="Reset" styles="{font:'Arial 24'}"/>
+        <TablePane.Filler/>
+    </TablePane.Row>
+</tictactoe:Game>

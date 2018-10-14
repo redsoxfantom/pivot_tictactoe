@@ -1,0 +1,8 @@
+<tictactoe:WindowManager title="Tic Tac Toe" maximized="true"
+        xmlns:bxml="http://pivot.apache.org/bxml"
+        xmlns:tictactoe="com.company.window"
+        xmlns="org.apache.pivot.wtk">
+    <CardPane bxml:id="root">
+
+    </CardPane>
+</tictactoe:WindowManager>

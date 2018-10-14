@@ -1,0 +1,28 @@
+<tictactoe:MainMenu styles="{verticalAlignment:'center', horizontalAlignment:'center'}"
+                    orientation="vertical"
+                    xmlns:bxml="http://pivot.apache.org/bxml"
+                    xmlns:tictactoe="com.company.window"
+                    xmlns="org.apache.pivot.wtk">
+    <bxml:define>
+        <ButtonGroup bxml:id="playerselect"/>
+        <ButtonGroup bxml:id="difficultyselect"/>
+    </bxml:define>
+
+    <Border>
+        <Label text="Tic Tac Toe" styles="{font:'Arial bold 72'}"/>
+    </Border>
+    <Label text="Number of Players:" styles="{font:'Arial 24'}"/>
+    <BoxPane>
+        <RadioButton styles="{font:'Arial 24'}" bxml:id="oneplayer" buttonData="1" buttonGroup="$playerselect" selected="true"/>
+        <RadioButton styles="{font:'Arial 24'}" bxml:id="twoplayers" buttonData="2" buttonGroup="$playerselect"/>
+    </BoxPane>
+    <BoxPane bxml:id="compdivdiff" styles="{verticalAlignment:'center', horizontalAlignment:'center'}" orientation="vertical">
+        <Label text="Computer Difficulty:" styles="{font:'Arial 24'}"/>
+        <BoxPane>
+            <RadioButton styles="{font:'Arial 24'}" bxml:id="easydifficulty" buttonData="Easy" buttonGroup="$difficultyselect" selected="true"/>
+            <RadioButton styles="{font:'Arial 24'}" bxml:id="mediumdifficulty" buttonData="Medium" buttonGroup="$difficultyselect"/>
+            <RadioButton styles="{font:'Arial 24'}" bxml:id="harddifficulty" buttonData="Hard" buttonGroup="$difficultyselect"/>
+        </BoxPane>
+    </BoxPane>
+    <PushButton styles="{font:'Arial 24'}" bxml:id="playbutton" buttonData="Play"/>
+</tictactoe:MainMenu>
